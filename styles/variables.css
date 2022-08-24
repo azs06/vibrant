@@ -1,0 +1,17 @@
+:root{
+    --primaryColor: red;
+    --defaultColor: green;
+    --secondaryColor: black;
+    --greyColor: #ccc;
+    --darkGreyColor: #111;
+    --lightGreyColor: #ccc;
+    --backgroundColor: #fff;
+    --errorColor: red;
+    --successColor: green;
+    --warningColor: yellow;
+    --fontSize: 1.6rem;
+    --fontPrimary: "";
+    --fontSecondary: "";
+    --fontColor: #111;
+    --gridMaxWidht: 100rem;
+}
