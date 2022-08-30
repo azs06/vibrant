@@ -15,3 +15,139 @@
     --fontColor: #111;
     --gridMaxWidht: 100rem;
 }
+
+* {
+	box-sizing: border-box;
+}
+/* ================================= 
+  Grid System
+==================================== */
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-right: 1rem;
+  padding-left: 1rem; 
+}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  box-sizing: border-box;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.col{
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;  
+}
+.col-1{
+  max-width: calc(100%/12);
+  flex-basis: calc(100%/12);
+}
+.col-2{
+  max-width: calc(100%/12*2);
+  flex-basis: calc(100%/12*2);
+}
+.col-3{
+  max-width: calc(100%/12*3);
+  flex-basis: calc(100%/12*3);
+}
+.col-4{
+  max-width: calc(100%/12*4);
+  flex-basis: calc(100%/12*4);
+}
+.col-5{
+  max-width: calc(100%/12*5);
+  flex-basis: calc(100%/12*5);
+}
+.col-6{
+  max-width: calc(100%/12*6);
+  flex-basis: calc(100%/12*6);
+}
+.col-7{
+  max-width: calc(100%/12*7);
+  flex-basis: calc(100%/12*7);
+}
+.col-8{
+  max-width: calc(100%/12*8);
+  flex-basis: calc(100%/12*8);
+}
+.col-9{
+  max-width: calc(100%/12*9);
+  flex-basis: calc(100%/12*9);
+}
+.col-10{
+  max-width: calc(100%/12*10);
+  flex-basis: calc(100%/12*10);
+}
+.col-11{
+  max-width: calc(100%/12*11);
+  flex-basis: calc(100%/12*11);
+}
+.col-12{
+  max-width: calc(100%/12*12);
+  flex-basis: calc(100%/12*12);
+}
+.col-1-offset{
+    margin-left: calc(100%/12);
+}
+.col-2-offset{
+    margin-left: calc(100%/12*2);
+}
+.col-3-offset{
+    margin-left: calc(100%/12*3);
+}
+.col-4-offset{
+    margin-left: calc(100%/12*4);
+}
+.col-5-offset{
+    margin-left: calc(100%/12*5);
+}
+.col-6-offset{
+    margin-left: calc(100%/12*6);
+}
+.col-7-offset{
+    margin-left: calc(100%/12*7);
+}
+.col-8-offset{
+    margin-left: calc(100%/12*8);
+}
+.col-9-offset{
+    margin-left: calc(100%/12*9);
+}
+.col-10-offset{
+    margin-left: calc(100%/12*10);
+}
+.col-11-offset{
+    margin-left: calc(100%/12*11);
+}
