@@ -1,1 +1,3 @@
-# The goal is to built my own CSS library
+# Vibrant.css
+
+A brutalist CSS framework for fun!!
