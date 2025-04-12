@@ -1,18 +1,16 @@
 :root {
-  --primaryColor: #ff4081;      /* Vibrant hot pink */
-  --defaultColor: #00bcd4;      /* Bright cyan */
-  --secondaryColor: #9c27b0;    /* Vivid purple */
-  --greyColor: #bfbfbf;         /* Light grey for subtle borders */
-  --darkGreyColor: #616161;     /* For deeper accents */
-  --lightGreyColor: #e0e0e0;    /* Soft background accents */
-  --backgroundColor: #ffffff;   /* Clean white background */
-  --errorColor: #f44336;        /* Bold red for errors */
-  --successColor: #4caf50;      /* Bright green for success */
-  --warningColor: #ffc107;      /* Striking amber for warnings */
+  --primaryColor: #e53935;       /* A bold red */
+  --defaultColor: #ffffff;       /* Crisp white */
+  --secondaryColor: #000000;     /* Jet black */
+  --greyColor: #757575;
+  --backgroundColor: #ffffff;
+  --errorColor: #d32f2f;
+  --successColor: #388e3c;
+  --warningColor: #fbc02d;
   --fontSize: 1.6rem;
-  --fontPrimary: 'Helvetica, Arial, sans-serif';
-  --fontSecondary: 'Georgia, serif';
-  --fontColor: #212121;         /* Dark, crisp text */
+  --fontPrimary: 'Courier New', monospace;  /* Consider a monospaced font for raw aesthetic */
+  --fontSecondary: 'Courier New', monospace;
+  --fontColor: var(--secondaryColor);
   --gridMaxWidht: 100rem;
 }
 

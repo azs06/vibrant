@@ -1,29 +1,30 @@
-/* tab.css */
+/* tab.css - Brutalist Design */
 .tabs {
-    display: flex;
-    border-bottom: 2px solid var(--greyColor);
-  }
-  
-  .tab {
-    padding: 0.8rem 1.6rem;
-    cursor: pointer;
-    font-size: var(--fontSize);
-    border: 1px solid transparent;
-    border-top-left-radius: 0.4rem;
-    border-top-right-radius: 0.4rem;
-    margin-right: 0.2rem;
-    color: var(--fontColor);
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .tab:hover {
-    background-color: var(--lightGreyColor);
-  }
-  
-  .tab.active {
-    background-color: var(--backgroundColor);
-    border: 1px solid var(--greyColor);
-    border-bottom: 2px solid var(--backgroundColor);
-    color: var(--primaryColor);
-    font-weight: bold;
-  }
-  
+  display: flex;
+  border-bottom: 3px solid var(--primaryColor);
+}
+
+.tab {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: var(--fontSize);
+  font-family: var(--fontPrimary);
+  text-transform: uppercase;
+  border: 3px solid transparent;
+  margin-right: 0.5rem;
+  color: var(--secondaryColor);
+  transition: none; /* Abrupt state changes only */
+}
+
+.tab:hover {
+  background-color: var(--greyColor);
+  color: var(--defaultColor);
+}
+
+.tab.active {
+  background-color: var(--defaultColor);
+  border: 3px solid var(--primaryColor);
+  border-bottom: 3px solid var(--defaultColor);
+  color: var(--primaryColor);
+  font-weight: bold;
+}

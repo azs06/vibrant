@@ -1,35 +1,37 @@
-/* card.css */
+/* card.css - Brutalist Design */
+
+/* Card Container */
 .card {
-    background-color: var(--backgroundColor);
-    border: 1px solid var(--greyColor);
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: var(--backgroundColor);  /* Crisp white background */
+    border: 3px solid var(--primaryColor);       /* Thick, bold border */
     margin: 1rem 0;
     overflow: hidden;
   }
   
   /* Card Header */
   .card-header {
-    background-color: var(--defaultColor);
+    background-color: var(--greyColor);          /* Stark grey header */
     padding: 1rem;
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--primaryColor);
-    border-bottom: 1px solid var(--greyColor);
+    color: var(--secondaryColor);                 /* Use the secondary color for contrast */
+    border-bottom: 3px solid var(--primaryColor);  /* Heavy divider */
+    text-transform: uppercase;                    /* Bold, raw feel */
   }
   
   /* Card Body */
   .card-body {
     padding: 1rem;
-    color: var(--fontColor);
+    color: var(--secondaryColor);
+    font-family: var(--fontPrimary);              /* Use monospaced for a rigid look */
   }
   
   /* Card Footer */
   .card-footer {
-    padding: 0.8rem 1rem;
+    padding: 1rem;
     font-size: 1.2rem;
     text-align: right;
-    border-top: 1px solid var(--greyColor);
+    border-top: 3px solid var(--primaryColor);     /* Matching heavy divider */
     color: var(--secondaryColor);
   }
   

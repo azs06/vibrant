@@ -1,51 +1,60 @@
-/* form.css */
+/* form.css - Brutalist Design */
 .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: var(--fontColor);
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    font-size: var(--fontSize);
-    border: 1px solid var(--greyColor);
-    border-radius: 0.4rem;
-    transition: border-color 0.3s;
-  }
-  
-  /* Focus state */
-  input:focus,
-  select:focus,
-  textarea:focus {
-    border-color: var(--primaryColor);
-    outline: none;
-    box-shadow: 0 0 5px rgba(255, 0, 0, 0.1);
-  }
-  
-  /* Feedback Messages */
-  .error-message {
-    color: var(--errorColor);
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
-  .success-message {
-    color: var(--successColor);
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
-  .warning-message {
-    color: var(--warningColor);
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
-  
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--secondaryColor);
+  font-family: var(--fontPrimary);
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: var(--fontSize);
+  border: 3px solid var(--greyColor);
+  border-radius: 0; /* Remove rounded edges for a raw look */
+  transition: none; /* Abrupt changes only */
+  font-family: var(--fontPrimary);
+}
+
+/* Focus state with immediate contrast change */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primaryColor);
+  outline: none;
+}
+
+/* Feedback Messages with bold typography */
+.error-message {
+  color: var(--errorColor);
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  font-family: var(--fontPrimary);
+  text-transform: uppercase;
+}
+
+.success-message {
+  color: var(--successColor);
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  font-family: var(--fontPrimary);
+  text-transform: uppercase;
+}
+
+.warning-message {
+  color: var(--warningColor);
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  font-family: var(--fontPrimary);
+  text-transform: uppercase;
+}

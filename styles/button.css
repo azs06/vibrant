@@ -1,40 +1,57 @@
-/* button.css */
+/* button.css - Brutalist Design */
+
+/* Base Button Style */
 .btn {
     display: inline-block;
     font-size: var(--fontSize);
-    padding: 0.8rem 1.6rem;
-    border: none;
-    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+    border: 3px solid var(--primaryColor);
+    background-color: var(--defaultColor);
+    color: var(--secondaryColor);
     cursor: pointer;
-    transition: background 0.3s ease, filter 0.2s;
+    transition: none; /* Abrupt changes only */
+    border-radius: 0; /* No rounding for a raw look */
+    font-family: var(--fontPrimary);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  
+  /* Base Hover State */
+  .btn:hover {
+    background-color: var(--primaryColor);
+    color: var(--defaultColor);
   }
   
   /* Primary Button */
   .btn-primary {
     background-color: var(--primaryColor);
     color: #fff;
+    border: 3px solid var(--primaryColor);
   }
   .btn-primary:hover {
-    filter: brightness(90%);
+    background-color: var(--defaultColor);
+    color: var(--primaryColor);
   }
   
   /* Default Button */
   .btn-default {
     background-color: var(--defaultColor);
-    color: #fff;
+    color: var(--secondaryColor);
+    border: 3px solid var(--secondaryColor);
   }
   .btn-default:hover {
-    filter: brightness(95%);
+    background-color: var(--secondaryColor);
+    color: var(--defaultColor);
   }
   
   /* Outline Button */
   .btn-outline {
     background-color: transparent;
     color: var(--primaryColor);
-    border: 2px solid var(--primaryColor);
+    border: 3px solid var(--primaryColor);
   }
   .btn-outline:hover {
     background-color: var(--primaryColor);
-    color: #fff;
+    color: var(--defaultColor);
   }
   

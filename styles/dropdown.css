@@ -1,4 +1,4 @@
-/* dropdown.css */
+/* dropdown.css - Brutalist Design */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -6,16 +6,20 @@
   
   .dropdown-toggle {
     cursor: pointer;
-    padding: 0.8rem 1.6rem;
+    padding: 1rem 2rem;
     font-size: var(--fontSize);
     background-color: var(--defaultColor);
-    border: 1px solid var(--greyColor);
-    border-radius: 0.4rem;
-    color: #fff;
-    transition: background-color 0.3s;
+    border: 3px solid var(--secondaryColor);
+    color: var(--secondaryColor);
+    transition: none;
+    border-radius: 0;
+    font-family: var(--fontPrimary);
+    text-transform: uppercase;
   }
+  
   .dropdown-toggle:hover {
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    color: var(--defaultColor);
   }
   
   .dropdown-menu {
@@ -23,11 +27,10 @@
     top: 100%;
     left: 0;
     display: none;
-    min-width: 10rem;
-    background-color: var(--backgroundColor);
-    border: 1px solid var(--greyColor);
-    border-radius: 0.4rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 12rem;
+    background-color: var(--defaultColor);
+    border: 3px solid var(--secondaryColor);
+    /* No box-shadow for a more raw, flat look */
     z-index: 1000;
   }
   
@@ -37,13 +40,18 @@
   
   .dropdown-menu a {
     display: block;
-    padding: 0.8rem 1.6rem;
+    padding: 1rem 2rem;
     font-size: var(--fontSize);
-    color: var(--fontColor);
+    color: var(--secondaryColor);
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: none;
+    font-family: var(--fontPrimary);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--greyColor);
   }
+  
   .dropdown-menu a:hover {
-    background-color: var(--lightGreyColor);
+    background-color: var(--secondaryColor);
+    color: var(--defaultColor);
   }
   
