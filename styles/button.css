@@ -1,0 +1,40 @@
+/* button.css */
+.btn {
+    display: inline-block;
+    font-size: var(--fontSize);
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background 0.3s ease, filter 0.2s;
+  }
+  
+  /* Primary Button */
+  .btn-primary {
+    background-color: var(--primaryColor);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    filter: brightness(90%);
+  }
+  
+  /* Default Button */
+  .btn-default {
+    background-color: var(--defaultColor);
+    color: #fff;
+  }
+  .btn-default:hover {
+    filter: brightness(95%);
+  }
+  
+  /* Outline Button */
+  .btn-outline {
+    background-color: transparent;
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+  }
+  .btn-outline:hover {
+    background-color: var(--primaryColor);
+    color: #fff;
+  }
+  

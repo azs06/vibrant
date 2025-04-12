@@ -1,0 +1,29 @@
+/* tab.css */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid var(--greyColor);
+  }
+  
+  .tab {
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+    font-size: var(--fontSize);
+    border: 1px solid transparent;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    margin-right: 0.2rem;
+    color: var(--fontColor);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .tab:hover {
+    background-color: var(--lightGreyColor);
+  }
+  
+  .tab.active {
+    background-color: var(--backgroundColor);
+    border: 1px solid var(--greyColor);
+    border-bottom: 2px solid var(--backgroundColor);
+    color: var(--primaryColor);
+    font-weight: bold;
+  }
+  

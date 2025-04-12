@@ -1,0 +1,35 @@
+/* card.css */
+.card {
+    background-color: var(--backgroundColor);
+    border: 1px solid var(--greyColor);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+    overflow: hidden;
+  }
+  
+  /* Card Header */
+  .card-header {
+    background-color: var(--defaultColor);
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primaryColor);
+    border-bottom: 1px solid var(--greyColor);
+  }
+  
+  /* Card Body */
+  .card-body {
+    padding: 1rem;
+    color: var(--fontColor);
+  }
+  
+  /* Card Footer */
+  .card-footer {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    text-align: right;
+    border-top: 1px solid var(--greyColor);
+    color: var(--secondaryColor);
+  }
+  
