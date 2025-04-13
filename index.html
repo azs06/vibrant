@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibrant CSS</title>
+    <script type="module" crossorigin src="/assets/index-DHkADP47.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CuO3TR1n.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">Vibrant</a>
+      <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="#card-section">Card</a></li>
+        <li><a href="#form-section">Form</a></li>
+        <li><a href="#tab-section">Tabs</a></li>
+        <li><a href="#tag-section">Tags</a></li>
+        <li><a href="#dropdown-section">Dropdown</a></li>
+        <li><a href="#button-section">Buttons</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <!-- Card Component -->
+      <section id="card-section">
+        <h2 class="text-center mt-2">Card Component</h2>
+        <div class="card">
+          <div class="card-header">Card Header</div>
+          <div class="card-body">
+            <p>
+              This is an example of a card component using vibrant.css design.
+            </p>
+          </div>
+          <div class="card-footer">Card Footer</div>
+        </div>
+      </section>
+
+      <!-- Form Component -->
+      <section id="form-section">
+        <h2 class="text-center">Form Component</h2>
+        <form action="#" method="post" class="p-2">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Your message here"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <p class="error-message mt-1">This is an error message.</p>
+        </form>
+      </section>
+
+      <!-- Tabs Component -->
+      <section id="tab-section">
+        <h2 class="text-center">Tab Component</h2>
+        <div class="tabs">
+          <div class="tab active" onclick="switchTab(event, 'tab1')">Tab 1</div>
+          <div class="tab" onclick="switchTab(event, 'tab2')">Tab 2</div>
+          <div class="tab" onclick="switchTab(event, 'tab3')">Tab 3</div>
+        </div>
+        <div id="tab-content">
+          <div id="tab1" class="tab-content">
+            <p>This is the content for Tab 1.</p>
+          </div>
+          <div id="tab2" class="tab-content" style="display: none">
+            <p>This is the content for Tab 2.</p>
+          </div>
+          <div id="tab3" class="tab-content" style="display: none">
+            <p>This is the content for Tab 3.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tag Component -->
+      <section id="tag-section">
+        <h2 class="text-center">Tag Component</h2>
+        <div class="p-2">
+          <span class="tag tag-primary">Primary Tag</span>
+          <span class="tag tag-secondary">Secondary Tag</span>
+          <span class="tag tag-success">Success Tag</span>
+          <span class="tag tag-warning">Warning Tag</span>
+          <span class="tag tag-error">Error Tag</span>
+        </div>
+      </section>
+
+      <!-- Dropdown Component -->
+      <section id="dropdown-section">
+        <h2 class="text-center">Dropdown Component</h2>
+        <div class="dropdown p-2">
+          <button class="dropdown-toggle" onclick="toggleDropdown()">
+            Dropdown
+          </button>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#">Action 1</a>
+            <a href="#">Action 2</a>
+            <a href="#">Action 3</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Button Components -->
+      <section id="button-section" class="mb-2">
+        <h2 class="text-center">Button Components</h2>
+        <div class="text-center">
+          <button class="btn btn-primary">Primary Button</button>
+          <button class="btn btn-default">Default Button</button>
+          <button class="btn btn-outline">Outline Button</button>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Toggle navbar menu on mobile view
+      function toggleMenu() {
+        var menu = document.getElementById("navbarMenu");
+        menu.classList.toggle("active");
+      }
+
+      // Toggle dropdown menu visibility
+      function toggleDropdown() {
+        var dropdown = document.getElementById("dropdownMenu");
+        dropdown.classList.toggle("show");
+      }
+
+      // Switch tab content
+      function switchTab(event, tabId) {
+        var tabs = document.getElementsByClassName("tab");
+        for (var i = 0; i < tabs.length; i++) {
+          tabs[i].classList.remove("active");
+        }
+        event.currentTarget.classList.add("active");
+
+        var tabContents = document.querySelectorAll(
+          "#tab-content .tab-content"
+        );
+        tabContents.forEach(function (content) {
+          content.style.display = "none";
+        });
+        document.getElementById(tabId).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
